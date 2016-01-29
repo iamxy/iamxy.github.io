@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PingCap</title>
+    <link rel="icon" href="image/fav.ico">
+    <meta name="keywords" content="pingcap,TiDB,codis">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="contact">
+    <header class="main">
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="image/site-logo2.png" alt="">
+            </a>
+            <ul>
+                <li><a href="index.html">TiDB</a></li>
+                <li><a href="team.html">About</a></li>
+                <!--<li><a href="doc.html">Documentation</a></li>-->
+                <li><a class="active" href="javascript:;">Contact</a></li>
+                <li><a href="https://github.com/pingcap/tidb" target="_blank" class="btn framed round">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="screen center">
+            <div class="container">
+                <div class="table">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="title">
+                                <p class="red hd">Contact Us</p>
+                            </div>
+                            <p class="desc hd">
+                                Contact us for more information about our products, professional services, support, and training.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:;" class="arrow-down">
+                <img class="arrow" src="image/down.png" alt="">
+            </a>
+        </section>
+        <section>
+            <div class="container center">
+                <ul class="grid grid-3">
+                    <li>
+                        <div class="field">
+                            <img class="icon" src="image/address-icon.png" alt="">
+                        </div>
+                        <p class="field">地址</p>
+                        <div class="desc">北京市海淀区后屯南路26号专家国际公馆605</div>
+                    </li>
+                    <li>
+                        <div class="field">
+                            <img class="icon" src="image/email-icon.png" alt="">
+                        </div>
+                        <p class="field">邮箱</p>
+                        <div class="desc">info@pingcap.com</div>
+                    </li>
+                    <li>
+                        <div class="field">
+                            <img class="icon" src="image/phone-icon.png" alt="">
+                        </div>
+                        <p class="field">电话</p>
+                        <div class="desc">86-010-82433359</div>
+                    </li>
+                </ul>
+                <div class="map" id="map"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="section links">
+            <div class="container">
+                <div class="left-section">
+                    <div class="title">Navigation</div>
+                    <ul>
+                        <li>
+                            <a href="index.html">TiDB</a>
+                        </li>
+                        <li>
+                            <a href="team.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-section">
+                    <!--<div class="title">邮件订阅</div>-->
+                    <div class="input">
+                        <input type="email" placeholder="your email address">
+                        <a href='javascript:;' class="input-btn">订阅</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section container copyright">
+            <p class="desc">©2016 PingCAP, Inc. All Rights Reserved.</p>
+            <figure>
+                <img src="image/footer-logo.png" alt="">
+            </figure>
+        </div>
+    </footer>
+    <script>
+    var myLatLng = { lat: 40.041745, lng: 116.354330 };
+    var map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), { center: myLatLng, zoom: 15});
+        var marker = new google.maps.Marker({
+            map: map,
+            position: myLatLng,
+            title: 'pingcap, a strong database.',
+            draggable: false
+        });
+    }
+    </script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASqhL4ap4svlzRiuAao1u-Z9tSWeU9ZwY&amp;callback=initMap">
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

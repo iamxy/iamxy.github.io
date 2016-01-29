@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PingCap</title>
+    <link rel="icon" href="image/fav.ico">
+    <meta name="keywords" content="pingcap,TiDB,codis">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="home">
+    <header class="main">
+        <nav class="container">
+            <a href="index.html" class="logo">
+                <img src="image/site-logo2.png" alt="">
+            </a>
+            <ul>
+                <li><a class="active" href="javascript:;">TiDB</a></li>
+                <li><a href="team.html">About</a></li>
+                <!--<li><a href="doc.html">Documentation</a></li>-->
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://github.com/pingcap/tidb" target="_blank" class="btn framed round">Github</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="screen center" id="home_main">
+            <div class="container">
+                <div class="logo">
+                    <img src="image/logo.png" alt="">
+                </div>
+                <div class="title field">
+                    <p>The scalable, high availability </p>
+                    <p>strongly consistent, transactional SQL Database</p>
+                </div>
+                <div class="desc">
+                    <p>TIDB IS A DISTRIBUTED SQL DATABASE. INSPIRED BY THE DESIGN OF GOOGLE F1</p>
+                    <p>SUPPORTS THE BEST FEATURES OF BOTH RDBMS AND NOSQL</p>
+                </div>
+            </div>
+        </section>
+        <section class="home-intro home-intro-0">
+            <div class="container center">
+                <h3 class="title">what's TiDB</h3>
+                <div class="br"></div>
+                <div class="desc">
+                    <p>TiDB 是开源的分布式数据库，参考 Google F1/Spanner 原理实现了水平伸缩，一致性的分布式事务，多副本同步复制</p>
+                    <p>等重要 NewSQL 特性。结合了 RDBMS 和 NoSQL 的优点，部署简单，扩容和在线表结构变更无阻塞，异地容灾高可用</p>
+                    <p>同时完全兼容 MySQL 协议，使迁移使用成本降到极低</p>
+                </div>
+                <div class="bg"></div>
+            </div>
+        </section>
+        <section class="home-intro home-intro-1">
+            <div class="container">
+                <div class="table">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="text">
+                                <div class="title green">水平伸缩</div>
+                                <div class="br green"></div>
+                                <div class="desc">
+                                    <p>分布式的 TiDB 可随着你的数据增长而无缝地水平扩展，只需要通过增加更多的机器来满足业务增长需要，应用层可以不用关心存储的容量和吞吐。</p>
+                                    <p>TiDB 根据存储、网络、距离等因素，动态进行负载均衡调整，以保证更优的读写性能。而这一切都在后台默默进行。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="figure">
+                                <figure>
+                                    <img class="sample" src="image/home1.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-intro home-intro-2 reverse">
+            <div class="container">
+                <div class="table">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="figure">
+                                <figure>
+                            <img class="sample" src="image/home2.png" alt="">
+                        </figure>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="text">
+                                <div class="title azure">高可用和强一致性</div>
+                                <div class="br azure"></div>
+                                <div class="desc">
+                                    <p>TiDB 使用多副本的数据存储和无状态的服务节点，并依赖同步复制的特性确保多个存储副本之间的强一致性。</p>
+                                    <p>副本可跨地域部署在的不同的数据中心，主副本故障时自动切换，最大程度地保证数据的可靠性和安全性。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-intro home-intro-3">
+            <div class="container">
+                <div class="table">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="text">
+                                <div class="title white">在线 Schema 变更</div>
+                                <div class="br white"></div>
+                                <div class="desc">
+                                    <p>TiDB Schema 可随时在线执行DDL来变更，添加列和索引并不会影响进行中的操作。不停机，不停数据库服务，执行表结构变动在分布式系统中，这个特性极其重要，目前除了 Google 的 F1 没有其他系统实现
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="figure">
+                                <figure>
+                                    <img class="sample" src="image/home3.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-intro home-intro-4 reverse">
+            <div class="container">
+                <div class="table">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="figure">
+                                <figure>
+                                    <img class="sample" src="image/home4.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="text">
+                                <div class="title red">一致性的分布式事务</div>
+                                <div class="br red"></div>
+                                <div class="desc">
+                                    <p>可以把 TiDB 想象成一个单机的 RDBMS，ACID 事务可以在多服务器间进行，无需担心一致性问题。TiDB 让你的代码简单而且可靠，更专注地关注应用逻辑。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-intro home-intro-5 reverse">
+            <div class="container">
+                <div class="table">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="text">
+                                <div class="title yellow">兼容 MySQL 协议</div>
+                                <div class="br yellow"></div>
+                                <div class="desc">
+                                    <p>你可以像使用 MySQL 一样来使用 TiDB，你可以使用 TiDB 来替换 MySQL 来服务你的业务，而绝大多情况下无需修改一行代码。面向 OLTP 应用，支持 MySQL DDL 语法，支持常规的 CRUD 语句，支持 JOIN 等聚合语句
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="figure">
+                                <figure>
+                                    <img class="sample" src="image/home5.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="home-intro home-intro-6 reverse">
+            <div class="container">
+                <div class="table">
+                    <div class="row">
+                        <div class="cell">
+                            <div class="figure">
+                                <figure>
+                                    <img class="sample" src="image/home6.png" alt="">
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="cell">
+                            <div class="text">
+                                <div class="title blue">数据迁移简单</div>
+                                <div class="br blue"></div>
+                                <div class="desc">
+                                    <p>
+                                        TiDB 支持在线和离线的数据迁移，用户可在不停止业务的前提下，将已有的数据安全地迁移到 TiDB。由于 TiDB 对外暴露的是 MySQL 协议，可以和 MySQL 的数据迁移工具配合使用
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="section light get-start center">
+            <div class="container">
+                <h3 class="title">Learn More About TiDB</h3>
+                <br>
+                <a href="https://github.com/pingcap/tidb" target="_blank" class="btn round">Github</a>
+            </div>
+        </div>
+        <div class="section links">
+            <div class="container">
+                <div class="left-section">
+                    <div class="title">Navigation</div>
+                    <ul>
+                        <li>
+                            <a href="#">TiDB</a>
+                        </li>
+                        <li>
+                            <a href="team.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-section">
+                    <!--<div class="title">邮件订阅</div>-->
+                    <div class="input">
+                        <input type="email" placeholder="your email address">
+                        <a href='javascript:;' class="input-btn">订阅</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section container copyright">
+            <p class="desc">©2016 PingCAP, Inc. All Rights Reserved.</p>
+            <figure>
+                <img src="image/footer-logo.png" alt="">
+            </figure>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
