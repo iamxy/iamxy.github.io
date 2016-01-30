@@ -328,11 +328,8 @@ blockquote:after {
   color: #fff;
 }
 ._btn {
-  font-size: .75rem;
   display: inline-block;
-  padding: 0 2em;
   color: #f8f8f8;
-  line-height: 2.8em;
   background: #ff3333;
   border-radius: 4px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
@@ -345,16 +342,16 @@ blockquote:after {
   background: #ff6666;
 }
 .btn {
-  font-size: .75rem;
   display: inline-block;
-  padding: 0 2em;
   color: #f8f8f8;
-  line-height: 2.8em;
   background: #ff3333;
   border-radius: 4px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
   -o-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
   transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  font-size: .75rem;
+  padding: 0 2em;
+  line-height: 2.8em;
 }
 .btn:hover {
   color: #fff;
@@ -365,6 +362,31 @@ blockquote:after {
   border-radius: 0.7em;
 }
 .btn.framed {
+  background: transparent;
+  border: 1px solid #ff3333;
+  color: #ff3333;
+}
+.btn-big {
+  display: inline-block;
+  color: #f8f8f8;
+  background: #ff3333;
+  border-radius: 4px;
+  -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  -o-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  font-size: 1.25rem;
+  padding: 0 2em;
+  line-height: 2em;
+}
+.btn-big:hover {
+  color: #fff;
+  box-shadow: 0 1px 2px rgba(200, 50, 0, 0.3);
+  background: #ff6666;
+}
+.btn-big.round {
+  border-radius: 0.7em;
+}
+.btn-big.framed {
   background: transparent;
   border: 1px solid #ff3333;
   color: #ff3333;
@@ -710,11 +732,8 @@ footer .input input[type='email'] {
   border-top-left-radius: 18px;
 }
 footer .input .input-btn {
-  font-size: .75rem;
   display: inline-block;
-  padding: 0 2em;
   color: #f8f8f8;
-  line-height: 2.8em;
   background: #ff3333;
   border-radius: 4px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
