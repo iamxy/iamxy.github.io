@@ -286,7 +286,10 @@ blockquote:after {
   content: none;
 }
 .red {
-  color: #EE040D;
+  color: #ff3333;
+}
+.l_red {
+  color: #ff6666;
 }
 .black {
   color: #3B3B3C;
@@ -298,7 +301,7 @@ blockquote:after {
   color: #01adff;
 }
 .blue {
-  color: #376edd;
+  color: #3399ff;
 }
 .l_blue {
   color: #EEF3F7;
@@ -330,7 +333,7 @@ blockquote:after {
   padding: 0 2em;
   color: #f8f8f8;
   line-height: 2.8em;
-  background: #eb4b3f;
+  background: #ff3333;
   border-radius: 4px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
   -o-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
@@ -339,7 +342,7 @@ blockquote:after {
 ._btn:hover {
   color: #fff;
   box-shadow: 0 1px 2px rgba(200, 50, 0, 0.3);
-  background: #EE040D;
+  background: #ff6666;
 }
 .btn {
   font-size: .75rem;
@@ -347,7 +350,7 @@ blockquote:after {
   padding: 0 2em;
   color: #f8f8f8;
   line-height: 2.8em;
-  background: #eb4b3f;
+  background: #ff3333;
   border-radius: 4px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
   -o-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
@@ -356,15 +359,15 @@ blockquote:after {
 .btn:hover {
   color: #fff;
   box-shadow: 0 1px 2px rgba(200, 50, 0, 0.3);
-  background: #EE040D;
+  background: #ff6666;
 }
 .btn.round {
   border-radius: 0.7em;
 }
 .btn.framed {
   background: transparent;
-  border: 1px solid #eb4b3f;
-  color: #eb4b3f;
+  border: 1px solid #ff3333;
+  color: #ff3333;
 }
 .container {
   width: 1100px;
@@ -379,6 +382,9 @@ blockquote:after {
 }
 .field {
   margin-bottom: .8em;
+}
+.field2 {
+  margin-bottom: .2em;
 }
 ul.grid {
   overflow: hidden;
@@ -443,7 +449,11 @@ main {
 }
 .title .large {
   font-weight: 500;
-  font-size: 46px;
+  font-size: 40px;
+}
+.title .small {
+  font-weight: 300;
+  font-size: 26px;
 }
 .desc {
   color: #999;
@@ -486,7 +496,7 @@ main {
   border-color: #43be36;
 }
 .br.red {
-  border-color: #eb4b3f;
+  border-color: #ff3333;
 }
 .br.l_blue {
   border-color: #EEF3F7;
@@ -510,7 +520,7 @@ a {
   transition: color .3s, background .3s;
 }
 a:hover {
-  color: #eb4b3f;
+  color: #ff3333;
 }
 main > section {
   padding: 3em 0 3em;
@@ -579,10 +589,10 @@ header.main nav a {
   color: #C9CDCD;
 }
 header.main nav a.active {
-  color: #eb4b3f;
+  color: #ff3333;
 }
 header.main nav a:hover {
-  color: #eb4b3f;
+  color: #ff3333;
 }
 header.main nav .logo {
   position: relative;
@@ -616,8 +626,8 @@ header.main nav > ul li a.btn {
   color: #C9CDCD;
 }
 header.main nav > ul li a.btn:hover {
-  border-color: #eb4b3f;
-  color: #eb4b3f;
+  border-color: #ff3333;
+  color: #ff3333;
 }
 footer {
   background: #121920;
@@ -640,7 +650,9 @@ footer .get-start {
   padding: 3em 0 5em;
 }
 footer .get-start .title {
-  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 3.3rem;
+  font-size: 36px;
 }
 footer .get-start .btn {
   padding: 0 2em;
@@ -703,7 +715,7 @@ footer .input .input-btn {
   padding: 0 2em;
   color: #f8f8f8;
   line-height: 2.8em;
-  background: #eb4b3f;
+  background: #ff3333;
   border-radius: 4px;
   -webkit-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
   -o-transition: background 0.3s, color 0.3s, box-shadow 0.3s;
@@ -722,7 +734,7 @@ footer .input .input-btn {
 footer .input .input-btn:hover {
   color: #fff;
   box-shadow: 0 1px 2px rgba(200, 50, 0, 0.3);
-  background: #EE040D;
+  background: #ff6666;
 }
 footer .input .input-btn:hover {
   background: #555;
@@ -975,7 +987,7 @@ body.team main .skill-tree-block-2 {
   top: 155px;
 }
 body.team main .skill-tree-block-2 .text:before {
-  background-color: #eb4b3f;
+  background-color: #ff3333;
 }
 body.team main .skill-tree-block-3 {
   top: 235px;
@@ -1040,13 +1052,13 @@ body.doc main > aside > .chapter > .item > .section > .item {
   color: #838383;
 }
 body.doc main > aside > .chapter > .item > .section > .item.active > a {
-  color: #EE040D;
+  color: #ff6666;
 }
 body.doc main > aside > .chapter > .item.active {
   border-color: transparent;
 }
 body.doc main > aside > .chapter > .item.active > a {
-  background-color: #EE040D;
+  background-color: #ff6666;
   background-image: url('/image/down-icon.png');
   color: #fff;
 }

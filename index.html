@@ -28,24 +28,26 @@
                 <div class="logo">
                     <img src="image/logo.png" alt="">
                 </div>
+                <div class="title field2">
+                    <p class="large">The NewSQL Database</p>
+                </div>
                 <div class="title field">
-                    <p>The scalable, highly available </p>
-                    <p>strongly consistent, transactional SQL Database</p>
+                    <p class="small">Scalability, Strong Consistency And Distributed Transactions Support</p>
                 </div>
                 <div class="desc">
-                    <p>TIDB IS A DISTRIBUTED SQL DATABASE. INSPIRED BY THE DESIGN OF GOOGLE F1</p>
+                    <p>TIDB IS A DISTRIBUTED SQL DATABASE. INSPIRED BY THE DESIGN OF GOOGLE F1/SPANNER</p>
                     <p>SUPPORTS THE BEST FEATURES OF BOTH RDBMS AND NOSQL</p>
                 </div>
             </div>
         </section>
         <section class="home-intro home-intro-0">
             <div class="container center">
-                <h3 class="title">What's TiDB</h3>
+                <h3 class="title">What's TiDB ?</h3>
                 <div class="br"></div>
                 <div class="desc">
                     <p>TiDB 是开源的分布式数据库，参考 Google F1/Spanner 实现了水平伸缩，一致性的分布式事务，多副本同步复制</p>
-                    <p>等重要 NewSQL 特性。结合了 RDBMS 和 NoSQL 的优点，部署简单，扩容和在线表结构变更无阻塞，异地容灾高可用，</p>
-                    <p>同时完全兼容 MySQL 协议，使迁移使用成本降到极低。</p>
+                    <p>等重要 NewSQL 特性。结合了 RDBMS 和 NoSQL 的优点，部署简单，在线扩容和表结构变更不影响业务，</p>
+                    <p>异地多活保障数据安全，同时完全兼容 MySQL 协议，使迁移使用成本降到极低。</p>
                 </div>
                 <div class="bg"></div>
             </div>
@@ -110,7 +112,7 @@
                                 <div class="title white">在线 Schema 变更</div>
                                 <div class="br white"></div>
                                 <div class="desc">
-                                    <p>TiDB 可在线执行 DDL 进行 schema 变更，添加列和索引不会阻塞进行中的操作。在分布式系统中，这个特性极其重要，目前除了
+                                    <p>TiDB 可在线执行 DDL 语句，对 schema 进行变更。添加列和索引不会阻塞其他进行中的操作。在分布式系统中，这个特性极其重要，目前除了
                                         Google 的 F1 没有其他系统实现。
                                     </p>
                                 </div>
@@ -140,10 +142,10 @@
                         </div>
                         <div class="cell">
                             <div class="text">
-                                <div class="title red">一致性的分布式事务</div>
-                                <div class="br red"></div>
+                                <div class="title yellow">一致性的分布式事务</div>
+                                <div class="br yellow"></div>
                                 <div class="desc">
-                                    <p>可以把 TiDB 想象成一个单机的 RDBMS，ACID 事务可以在多服务器间进行，无需担心一致性问题。TiDB 让你的代码简单而且可靠，更专注地关注应用逻辑。
+                                    <p>可以把 TiDB 想象成一个单机的 RDBMS，ACID 事务可以在多服务器间进行，无需担心一致性问题。TiDB 让你的代码简单而可靠，使开发者更加专注于应用层业务逻辑的实现。
                                     </p>
                                 </div>
                             </div>
@@ -158,10 +160,11 @@
                     <div class="row">
                         <div class="cell">
                             <div class="text">
-                                <div class="title yellow">兼容 MySQL 协议</div>
-                                <div class="br yellow"></div>
+                                <div class="title blue">兼容 MySQL 协议</div>
+                                <div class="br blue"></div>
                                 <div class="desc">
-                                    <p>你可以像使用 MySQL 一样来使用 TiDB，你可以使用 TiDB 来替换 MySQL 来服务你的业务，而绝大多情况下无需修改一行代码。面向 OLTP 应用，支持 MySQL DDL 语法，支持常规的 CRUD 语句，支持 JOIN 等聚合语句。
+                                    <p>TiDB 的通讯协议与 MySQL 高度兼容。你可以轻松地使用 TiDB 替换 MySQL 来支持你的业务，而几乎无需修改代码。
+                                        针对 MySQL 的客户端管理工具可以直接连接 TiDB，极大地降低了开发者的学习和使用成本。
                                     </p>
                                 </div>
                             </div>
@@ -190,11 +193,11 @@
                         </div>
                         <div class="cell">
                             <div class="text">
-                                <div class="title blue">便捷的数据迁移</div>
-                                <div class="br blue"></div>
+                                <div class="title l_red">便捷的数据迁移</div>
+                                <div class="br red"></div>
                                 <div class="desc">
                                     <p>
-                                        TiDB 支持在线和离线的数据迁移，用户可在不停止业务的前提下，将已有的数据安全地迁移到 TiDB。由于 TiDB 对外暴露的是 MySQL 协议，可以和 MySQL 的数据迁移工具配合使用。
+                                        TiDB 提供在线和离线的数据迁移，用户可以在不停业务的情况下，将数据安全地迁移到 TiDB。由于 TiDB 对外暴露的是 MySQL 协议，可以很好的跟 MySQL 数据迁移工具配合使用。
                                     </p>
                                 </div>
                             </div>
@@ -207,7 +210,7 @@
     <footer>
         <div class="section light get-start center">
             <div class="container">
-                <h3 class="title">Learn More About TiDB</h3>
+                <h3 class="title">Discover More</h3>
                 <br>
                 <a href="https://github.com/pingcap/tidb" target="_blank" class="btn round">Github</a>
             </div>
